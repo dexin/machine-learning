@@ -6,8 +6,8 @@ public class BatchGradientDescent
 
     public static void main(String[] args)
     {
-	LMS lms = new LMS();	
-	lms.run_it();
+	BatchGradientDescent algo = new BatchGradientDescent();	
+	algo.run_it();
     }
     
     
@@ -15,16 +15,16 @@ public class BatchGradientDescent
     {
 	double[] theta = {1.5, -0.4, 0.85, -4.2};
 	double[][] x = {
-	    {LMS.X0, 0, 2, 4},
-	    {LMS.X0, 1, 3, 5},
-	    {LMS.X0, 2, 2, 7},
-	    {LMS.X0, 3, 5, 0},
-	    {LMS.X0, 4, 1, 8},
-	    {LMS.X0, 5, 4, 4},
-	    {LMS.X0, 6, 5, 1},
-	    {LMS.X0, 7, 2, 3},
-	    {LMS.X0, 8, 3, 2},
-	    {LMS.X0, 9, 7, 6}
+	    {this.X0, 0, 2, 4},
+	    {this.X0, 1, 3, 5},
+	    {this.X0, 2, 2, 7},
+	    {this.X0, 3, 5, 0},
+	    {this.X0, 4, 1, 8},
+	    {this.X0, 5, 4, 4},
+	    {this.X0, 6, 5, 1},
+	    {this.X0, 7, 2, 3},
+	    {this.X0, 8, 3, 2},
+	    {this.X0, 9, 7, 6}
 
 	};
 	System.out.println(get_matrix_string(x));
